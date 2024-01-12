@@ -14,13 +14,34 @@
   font-weight: 300;
   font-size: 22px;
   color: $color_lightBrown;
+  display: flex;
+}
+
+@keyframes reveal {
+  0% {
+    max-width: 0;
+  }
+  100% {
+    max-width: 100%;
+  }
 }
 
 .title_text {
-  font-size: 60px;
-  color: #dba438;
-  line-height: 80px;
-  font-family: "Parisienne", cursive;
+  margin-top: 35px;
+  margin-bottom: 50px;
+
+  div {
+    max-width: 0;
+    overflow: hidden;
+    text-wrap: nowrap;
+    animation: 3s linear reveal;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    line-height: 80px;
+    font-size: 60px;
+    color: #dba438;
+    font-family: "Parisienne", cursive;
+  }
 }
 
 .password_input_container {

@@ -25,7 +25,9 @@ export default function Login() {
         /> */}
         <img src={flowers} className={`${styles.image_noselect} ${styles.flowers}`} alt="" />
         <div className={styles.intro_text}>Welcome to the wedding site of</div>
-        <h1 className={styles.title_text}>Rebecca and Jeffrey</h1>
+        <div className={styles.title_text}>
+          <div>Rebecca and Jeffrey</div>
+        </div>
         <div className={styles.password_input_container}>
           <img className={styles.lock_image} src={lock} alt="" />
           <input
