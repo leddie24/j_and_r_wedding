@@ -1,0 +1,22 @@
+@import "../../theme/common";
+
+.navbar {
+  padding-left: 30px;
+
+  a {
+    font-family: "Parisienne", cursive;
+    font-size: 30px;
+    color: $color_gold;
+    text-decoration: none;
+  }
+
+  ul {
+    display: flex;
+    gap: 40px;
+  }
+
+  li {
+    color: #918585;
+    text-transform: uppercase;
+  }
+}

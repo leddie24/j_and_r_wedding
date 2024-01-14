@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [password, setPassword] = React.useState("");
-  const [isError, setError] = React.useState(true);
+  const [isError, setError] = React.useState(false);
 
   const navigate = useNavigate();
 

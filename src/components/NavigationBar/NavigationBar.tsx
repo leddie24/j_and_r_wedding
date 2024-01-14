@@ -1,6 +1,8 @@
+import styles from "./NavigationBar.module.scss";
+
 export const NavigationBar = () => {
   return (
-    <nav>
+    <nav className={styles.navbar}>
       <a href="#">Rebecca and Jeffrey</a>
       <ul>
         <li>Our story</li>

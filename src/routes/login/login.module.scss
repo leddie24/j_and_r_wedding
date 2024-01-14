@@ -47,7 +47,7 @@
     animation-fill-mode: forwards;
     line-height: 1.33;
     font-size: 60px;
-    color: #dba438;
+    color: $color_gold;
     font-family: "Parisienne", cursive;
 
     @include media-breakpoint-down(md) {
