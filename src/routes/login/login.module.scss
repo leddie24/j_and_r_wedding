@@ -1,0 +1,208 @@
+@import "../../theme/common";
+
+.login_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background: center center url("../../assets/login/pink_bg.jpg") no-repeat;
+  height: 100vh;
+}
+
+.intro_text {
+  font-weight: 300;
+  font-size: 22px;
+  color: $color_lightBrown;
+  display: flex;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 18px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    max-width: 0;
+  }
+  100% {
+    max-width: 100%;
+  }
+}
+
+.title_text {
+  margin-top: 35px;
+  margin-bottom: 50px;
+
+  @include media-breakpoint-down(md) {
+    margin: 10px 0;
+  }
+
+  div {
+    max-width: 0;
+    overflow: hidden;
+    text-wrap: nowrap;
+    animation: 3s linear reveal;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    line-height: 1.33;
+    font-size: 60px;
+    color: #dba438;
+    font-family: "Parisienne", cursive;
+
+    @include media-breakpoint-down(md) {
+      font-size: 7vw;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 30px;
+    }
+  }
+}
+
+.password_input_container {
+  max-width: 300px;
+  width: 100%;
+  height: 80px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, #fdc674 26.53%, #fe83a8 94.24%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media-breakpoint-down(sm) {
+    height: 60px;
+  }
+}
+
+.image_noselect {
+  pointer-events: none;
+  position: absolute;
+}
+
+.bridge {
+  left: 0;
+  bottom: 0;
+  width: 62%;
+}
+
+.san_jose {
+  bottom: 0;
+  right: 0;
+  width: 40%;
+}
+
+.flowers {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.flowers_left {
+  left: 0;
+  bottom: 0;
+  height: 80%;
+
+  @include media-breakpoint-up(md) {
+    height: 32%;
+    bottom: 36%;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 140px;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+    height: auto;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 30%;
+    top: 3%;
+    bottom: auto;
+    height: auto;
+    transform: none;
+  }
+}
+
+.flowers_right {
+  right: 0;
+  top: 100px;
+  height: 70%;
+
+  @include media-breakpoint-up(md) {
+    height: 32%;
+    bottom: 36%;
+    top: auto;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 140px;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+    height: auto;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 30%;
+    height: auto;
+    top: 1%;
+    bottom: auto;
+    transform: none;
+  }
+}
+
+.lock_image {
+  margin-left: 12px;
+  pointer-events: none;
+}
+
+.form {
+  display: flex;
+}
+
+.password_input {
+  font-size: 18px;
+  outline: 0;
+  border: 0;
+  margin-left: 12px;
+  color: $color_lightBrown;
+  flex: 1 1 auto;
+}
+
+.password_submit {
+  font-size: 0;
+  border: 0 !important;
+  outline: 0 !important;
+  height: 24px;
+  width: 24px;
+  margin-right: 12px;
+  background: center center url("../../assets/login/right-arrow.svg") no-repeat;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 0;
+    border: 0;
+  }
+}
+
+.error {
+  margin-top: 20px;
+  color: #ef0c0c;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  img {
+    margin-right: 4px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+  }
+}
