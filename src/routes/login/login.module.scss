@@ -31,8 +31,8 @@
 }
 
 .title_text {
-  margin-top: 35px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 
   @include media-breakpoint-down(md) {
     margin: 10px 0;
@@ -50,7 +50,7 @@
     color: $color_gold;
     font-family: "Parisienne", cursive;
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       font-size: 7vw;
     }
 
@@ -108,17 +108,16 @@
   bottom: 0;
   height: 80%;
 
-  @include media-breakpoint-up(md) {
-    height: 32%;
-    bottom: 36%;
-  }
-
-  @include media-breakpoint-down(md) {
-    width: 140px;
+  @include media-breakpoint-down(lg) {
+    width: 210px;
     top: 50%;
     transform: translateY(-50%);
     bottom: auto;
     height: auto;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 150px;
   }
 
   @include media-breakpoint-down(sm) {
@@ -135,18 +134,16 @@
   top: 100px;
   height: 70%;
 
-  @include media-breakpoint-up(md) {
-    height: 32%;
-    bottom: 36%;
-    top: auto;
-  }
-
-  @include media-breakpoint-down(md) {
-    width: 140px;
+  @include media-breakpoint-down(lg) {
+    width: 220px;
     top: 50%;
     transform: translateY(-50%);
     bottom: auto;
     height: auto;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 150px;
   }
 
   @include media-breakpoint-down(sm) {
