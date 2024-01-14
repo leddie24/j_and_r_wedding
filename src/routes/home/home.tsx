@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import { NavigationBar } from "../../components/NavigationBar/NavigationBar";
 import styles from "./home.module.scss";
 import homepic from "../../assets/home/rebecca_jeff_home.jpg";
-import homeflower from "../../assets/home/home_flower.jpg";
+// import homeflower from "../../assets/home/home_flower.jpg";
 
 export default function Home() {
   const weddingDate = new Date("08/17/2024");
@@ -16,8 +16,15 @@ export default function Home() {
     <Fragment>
       <NavigationBar />
       <div className={styles.topSection}>
-        <img src={homepic} alt="Rebecca and Jeff" />
-        <img src={homeflower} alt="" />
+        <div className={styles.picContainer}>
+          <img src={homepic} alt="Rebecca and Jeff" />
+        </div>
+        <div className={styles.homeFlower}>
+          <div className={styles.contentContainer}>
+            <div className={styles.names}>Rebecca & Jeffrey</div>
+            <div className={styles.date}>August 17, 2024</div>
+          </div>
+        </div>
       </div>
 
       <div className={styles.divider} />

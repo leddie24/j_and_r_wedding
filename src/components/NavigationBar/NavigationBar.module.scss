@@ -1,22 +1,51 @@
 @import "../../theme/common";
 
 .navbar {
-  padding-left: 30px;
+  padding: 16px 0px 0;
+  margin-bottom: 40px;
 
-  a {
+  a.homeLink {
     font-family: "Parisienne", cursive;
     font-size: 30px;
     color: $color_gold;
     text-decoration: none;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 26px;
+    }
   }
 
   ul {
     display: flex;
-    gap: 40px;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    @include media-breakpoint-down(xl) {
+      gap: 15px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      gap: 10px;
+    }
   }
 
   li {
-    color: #918585;
-    text-transform: uppercase;
+    a {
+      text-decoration: none;
+      color: #918585;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-size: 18px;
+
+      @include media-breakpoint-down(xl) {
+        font-size: 16px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        font-size: 14px;
+      }
+    }
   }
 }
