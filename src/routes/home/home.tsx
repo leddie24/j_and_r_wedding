@@ -1,9 +1,6 @@
-import { Fragment } from "react";
-
 import { NavigationBar } from "../../components/NavigationBar/NavigationBar";
 import styles from "./home.module.scss";
 import homepic from "../../assets/home/rebecca_jeff_home.jpg";
-// import homeflower from "../../assets/home/home_flower.jpg";
 
 export default function Home() {
   const weddingDate = new Date("08/17/2024");
@@ -13,7 +10,7 @@ export default function Home() {
   const daysRemaining = Math.round(timeDiff / (1000 * 3600 * 24));
 
   return (
-    <Fragment>
+    <div className="container">
       <NavigationBar />
       <div className={styles.topSection}>
         <div className={styles.picContainer}>
@@ -26,7 +23,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <div className={styles.divider} />
       <div className={styles.bottomSection}>
         <div className={styles.daysLeft}>{daysRemaining} days to go</div>
@@ -46,6 +42,6 @@ export default function Home() {
           <div>Indoor Reception</div>
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 }

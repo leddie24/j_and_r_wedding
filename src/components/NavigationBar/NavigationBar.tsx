@@ -4,9 +4,9 @@ import styles from "./NavigationBar.module.scss";
 export const NavigationBar = () => {
   return (
     <nav className={styles.navbar}>
-      <a className={styles.homeLink} href="#">
+      <Link className={styles.homeLink} to={"/home"}>
         Rebecca and Jeffrey
-      </a>
+      </Link>
       <ul>
         <li>
           <Link to={"/ourstory"}>Our story</Link>
