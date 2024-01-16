@@ -3,7 +3,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, Navigate, RouterProvider } from "react-router-dom";
 import "./index.scss";
 
 import { NavBarWrapper } from "./components/NavBarWrapper/NavBarWrapper";
@@ -22,7 +22,7 @@ const Gallery = loadable(() => import("./routes/gallery/Gallery"));
 const Registry = loadable(() => import("./routes/registry/Registry"));
 const FAQ = loadable(() => import("./routes/faq/FAQ"));
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Login />,
