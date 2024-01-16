@@ -9,13 +9,13 @@ export const NavigationBar = () => {
       </Link>
       <ul>
         <li>
-          <Link to={"/ourstory"}>Our story</Link>
+          <Link to={"/our-story"}>Our story</Link>
         </li>
         <li>
-          <Link to={"/weddingparty"}>Wedding party</Link>
+          <Link to={"/wedding-party"}>Wedding party</Link>
         </li>
         <li>
-          <Link to={"/thebigday"}>The big day</Link>
+          <Link to={"/the-big-day"}>The big day</Link>
         </li>
         <li>
           <Link to={"/travel"}>Travel & stay</Link>

@@ -44,31 +44,33 @@ export default function Login() {
           className={`${styles.image_noselect} ${styles.flowers_right}`}
           alt=""
         />
-        <div className={styles.intro_text}>Welcome to the wedding site of</div>
-        <div className={styles.title_text}>
-          <div>Rebecca and Jeffrey</div>
-        </div>
-        <div className={styles.password_input_container}>
-          <img className={styles.lock_image} src={lock} alt="" />
-          <form className={styles.form} onSubmit={onSubmitClick}>
-            <input
-              onChange={updatePassword}
-              className={styles.password_input}
-              type="text"
-              autoComplete="off"
-              title="password"
-              value={password}
-            />
-            <input type="submit" className={styles.password_submit} />
-          </form>
-        </div>
-
-        {isError && (
-          <div className={styles.error}>
-            <img src={x_circle} alt="" />
-            Your password is incorrect. Please try again!
+        <div className={styles.content_container}>
+          <div className={styles.intro_text}>Welcome to the wedding site of</div>
+          <div className={styles.title_text}>
+            <div>Rebecca and Jeffrey</div>
           </div>
-        )}
+          <div className={styles.password_input_container}>
+            <img className={styles.lock_image} src={lock} alt="" />
+            <form className={styles.form} onSubmit={onSubmitClick}>
+              <input
+                onChange={updatePassword}
+                className={styles.password_input}
+                type="text"
+                autoComplete="off"
+                title="password"
+                value={password}
+              />
+              <input type="submit" className={styles.password_submit} />
+            </form>
+          </div>
+
+          {isError && (
+            <div className={styles.error}>
+              <img src={x_circle} alt="" />
+              Your password is incorrect. Please try again!
+            </div>
+          )}
+        </div>
       </div>
     </>
   );

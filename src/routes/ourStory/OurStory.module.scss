@@ -1,0 +1,17 @@
+.container_image_left {
+  display: flex;
+  gap: 48px;
+}
+
+figcaption {
+  text-align: center;
+  color: #918585;
+}
+
+.container_text {
+  margin-top: 55px;
+
+  > div {
+    margin-bottom: 12px;
+  }
+}

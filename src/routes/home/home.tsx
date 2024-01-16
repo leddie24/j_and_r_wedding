@@ -1,5 +1,4 @@
-import { NavigationBar } from "../../components/NavigationBar/NavigationBar";
-import styles from "./home.module.scss";
+import styles from "./Home.module.scss";
 import homepic from "../../assets/home/rebecca_jeff_home.jpg";
 
 export default function Home() {
@@ -10,8 +9,7 @@ export default function Home() {
   const daysRemaining = Math.round(timeDiff / (1000 * 3600 * 24));
 
   return (
-    <div className="container">
-      <NavigationBar />
+    <>
       <div className={styles.topSection}>
         <div className={styles.picContainer}>
           <img src={homepic} alt="Rebecca and Jeff" />
@@ -42,6 +40,6 @@ export default function Home() {
           <div>Indoor Reception</div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
