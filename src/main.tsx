@@ -3,7 +3,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import { createBrowserRouter, createHashRouter, Navigate, RouterProvider } from "react-router-dom";
+import { createHashRouter, Navigate, RouterProvider } from "react-router-dom";
 import "./index.scss";
 
 import { NavBarWrapper } from "./components/NavBarWrapper/NavBarWrapper";

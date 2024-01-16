@@ -1,9 +1,9 @@
 import React, { useCallback } from "react";
 import styles from "./login.module.scss";
 import lock from "../../assets/login/lock.svg";
-import flowers_left from "../../assets/login/flowers_left.png";
-import flowers_right from "../../assets/login/flowers_right.png";
-import bridge from "../../assets/login/bridge.svg";
+import flowers_left from "../../assets/login/flowers_left.avif";
+import flowers_right from "../../assets/login/flowers_right.avif";
+import bridge from "../../assets/login/bridge.avif";
 import san_jose from "../../assets/login/san_jose.svg";
 import x_circle from "../../assets/login/x-circle.svg";
 
