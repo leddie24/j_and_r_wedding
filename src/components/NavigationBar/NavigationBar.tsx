@@ -41,7 +41,7 @@ export const NavigationBar = () => {
             <img src={xIcon} alt="close" />
           </button>
         )}
-        <li>
+        <li className={styles.mobileOnly}>
           <Link to={"/home"}>Home</Link>
         </li>
         <li>

@@ -5,7 +5,7 @@ import styles from "./NavBarWrapper.module.scss";
 export const NavBarWrapper = () => {
   return (
     <div className={styles.bgWrapper}>
-      <div className="container">
+      <div className={styles.container}>
         <NavigationBar />
         <Outlet />
       </div>

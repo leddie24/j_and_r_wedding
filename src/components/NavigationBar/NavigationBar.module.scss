@@ -29,6 +29,8 @@
   padding: 16px 0px 0;
   margin-bottom: 40px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   .closeMenu {
     display: none;
@@ -39,14 +41,13 @@
     cursor: pointer;
   }
 
-  @include media-breakpoint-down(md) {
-    padding-top: 50px;
-  }
-
-  @include media-breakpoint-up(sm) {
-    align-items: center;
+  @include media-breakpoint-down(lg) {
     flex-direction: column;
     gap: 40px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: 50px;
   }
 
   a.homeLink {
@@ -89,11 +90,16 @@
     align-items: center;
     margin: 0;
     transition: transform 400ms ease-in-out;
-    padding: 0 10px;
   }
 
   li {
     list-style: none;
+
+    &.mobileOnly {
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
+    }
 
     a {
       text-align: center;

@@ -1,6 +1,8 @@
 import styles from "./Home.module.scss";
 import homepic from "../../assets/home/rebecca_jeff_home.jpg";
 
+import mainFlower from "../../assets/home/main_flower.png";
+
 export default function Home() {
   const weddingDate = new Date("08/17/2024");
   const currentDate = new Date();
@@ -15,6 +17,7 @@ export default function Home() {
           <img src={homepic} alt="Rebecca and Jeff" />
         </div>
         <div className={styles.homeFlower}>
+          <img src={mainFlower} alt="flower" />
           <div className={styles.contentContainer}>
             <div className={styles.names}>Rebecca & Jeffrey</div>
             <div className={styles.date}>August 17, 2024</div>
@@ -26,7 +29,7 @@ export default function Home() {
         <div className={styles.daysLeft}>{daysRemaining} days to go</div>
         <div className={styles.title}>Ceremony & reception</div>
         <div className={styles.dateTime}>
-          <div>August 17</div>
+          <div>August 17, 2024</div>
           <div>4:00 PM - 10:00 PM</div>
         </div>
         <div className={styles.location}>
