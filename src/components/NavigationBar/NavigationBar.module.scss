@@ -4,7 +4,14 @@
   cursor: pointer;
   position: absolute;
   top: 56px;
-  left: 16px;
+
+  @include media-breakpoint-down(md) {
+    left: 25px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    left: 16px;
+  }
 
   span {
     display: block;

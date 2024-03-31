@@ -1,6 +1,51 @@
-.container_image_left {
+@import "../../theme/common";
+
+.section {
   display: flex;
-  gap: 48px;
+  gap: 50px;
+  align-items: flex-start;
+
+  > img {
+    max-width: 48%;
+
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    gap: 90px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    gap: 20px;
+  }
+
+  @include media-breakpoint-down(md) {
+    gap: 15px;
+    flex-direction: column;
+  }
+}
+
+.mobileReverse {
+  @include media-breakpoint-down(md) {
+    flex-direction: column-reverse;
+  }
+}
+
+figure {
+  flex: 1 1 auto;
+  margin: 0;
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 figcaption {
@@ -9,9 +54,30 @@ figcaption {
 }
 
 .container_text {
-  margin-top: 55px;
-
+  flex: 1 1 56%;
   > div {
     margin-bottom: 12px;
+  }
+}
+
+h3 {
+  margin: 0 0 16px;
+}
+
+.image_grid {
+  display: grid;
+  gap: 20px 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  margin-bottom: 48px;
+
+  img {
+    width: 100%;
+  }
+
+  @include media-breakpoint-down(md) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
 }

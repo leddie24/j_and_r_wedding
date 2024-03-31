@@ -8,13 +8,16 @@ import img_5 from "./images/5.avif";
 import img_6 from "./images/6.avif";
 import img_7 from "./images/7.avif";
 import img_8 from "./images/8.avif";
+import img_2023_1 from "./images/2023_1.jpg";
+import img_2023_2 from "./images/2023_2.jpg";
+import img_2019 from "./images/2019.jpg";
 
 export default function OurStory() {
   return (
     <>
-      <div className={styles.container_image_left}>
+      <div className={styles.section}>
         <figure>
-          <img src={img_2013} alt="" />
+          <img src={img_2013} alt="" width={498} height={391} />
           <figcaption>Margaritaville, Capitola, CA</figcaption>
         </figure>
         <div className={styles.container_text}>
@@ -31,7 +34,7 @@ export default function OurStory() {
           </div>
         </div>
       </div>
-      <div className={styles.container_image_left}>
+      <div className={`${styles.section} ${styles.mobileReverse}`}>
         <div className={styles.container_text}>
           <h3>2019</h3>
           <div>
@@ -50,12 +53,12 @@ export default function OurStory() {
           </div>
         </div>
         <figure>
-          <img src="https://dummyimage.com/498x351.jpg" alt="" />
+          <img src={img_2019} alt="2019 image" />
           <figcaption>Las Vegas, NV</figcaption>
         </figure>
       </div>
       <div>
-        <h3>Througout the years</h3>
+        <h3>Throughout the years</h3>
         <div className={styles.image_grid}>
           <img src={img_1} />
           <img src={img_2} />
@@ -65,6 +68,48 @@ export default function OurStory() {
           <img src={img_6} />
           <img src={img_7} />
           <img src={img_8} />
+        </div>
+      </div>
+
+      <div className={styles.section}>
+        <img src={img_2023_1} alt="" />
+        <div className={styles.container_text}>
+          <h3>2013</h3>
+          <div>
+            The proposal: Rebecca and Jeff planned a trip to Maine and Boston in June to celebrate
+            Gabe and Christina's wedding and enjoy some traveling.
+          </div>
+          <div>
+            On June 17th, 2023 they arrived at Smith & Wollensky and had an unforgettable experience
+            - their food was amazing, waiter was the best they ever had, and Jeff and Rebecca had
+            heartfelt conversations about their future, goals, and what they love about each other
+            and their families.
+          </div>
+
+          <div>
+            When Rebecca stepped into the bathroom after dinner, a song in the background caught her
+            attention. It was playing Margaritaville by Jimmy Buffet, which reminded her of the
+            place where she met Jeff for the first time. What were the odds? After leaving the
+            restaurant, they decided to take a walk along the pier before heading back to their
+            hotel. They stopped in front of the Boston Tea Party site, and that was when Jeff
+            proposed. Of course, REBECCA SAID YES! 💍
+          </div>
+        </div>
+      </div>
+      <div className={styles.section}>
+        <img src={img_2023_2} alt="" />
+        <div className={styles.container_text}>
+          <h3>2013</h3>
+          <div>
+            We first met on June 15th, 2013 at a birthday party at Margaritaville in Capitola.
+            Shortly after, we became facebook friends and met twice more in group outings. Jeff
+            recalls me complimenting him on how funny he is (which I don't remember that
+            conversation 😝).
+          </div>
+          <div>
+            📸 Fun fact: There was a photographer at the birthday party who captured a photo of me
+            with Jeff in the background on the day we met.
+          </div>
         </div>
       </div>
     </>
