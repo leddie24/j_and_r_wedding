@@ -5,14 +5,14 @@
   gap: 50px;
   align-items: stretch;
   justify-content: center;
-  padding: 0 40px;
+  padding: 0 50px;
 
   @include media-breakpoint-down(xl) {
-    padding: 0 20px;
+    padding: 0 45px;
   }
 
   @include media-breakpoint-down(lg) {
-    padding: 0;
+    padding: 0 40px;
     gap: 20px;
   }
 
@@ -42,7 +42,7 @@
   flex: 1 1 auto;
   font-family: "Source Serif 4", serif;
   color: $color_darkBrown;
-  background: url("../../assets/home/main_flower.jpg") center center no-repeat;
+  background: url("../../assets/home/main_flower.png") center center no-repeat;
   background-size: auto 100%;
   display: flex;
   align-items: center;

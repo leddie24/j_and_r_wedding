@@ -1,11 +1,14 @@
 import { Outlet } from "react-router-dom";
 import { NavigationBar } from "../NavigationBar/NavigationBar";
+import styles from "./NavBarWrapper.module.scss";
 
 export const NavBarWrapper = () => {
   return (
-    <div className="container">
-      <NavigationBar />
-      <Outlet />
+    <div className={styles.bgWrapper}>
+      <div className="container">
+        <NavigationBar />
+        <Outlet />
+      </div>
     </div>
   );
 };

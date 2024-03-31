@@ -1,24 +1,85 @@
 @import "../../theme/common";
 
+.mobileMenu {
+  cursor: pointer;
+  position: absolute;
+  top: 56px;
+  left: 16px;
+
+  span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #736666;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+
 .navbar {
   padding: 16px 0px 0;
   margin-bottom: 40px;
+  display: flex;
 
-  @include media-breakpoint-down(lg) {
-    display: flex;
+  .closeMenu {
+    display: none;
+    border: 0;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: 50px;
+  }
+
+  @include media-breakpoint-up(sm) {
+    align-items: center;
     flex-direction: column;
-    justify-content: center;
-    gap: 10px;
+    gap: 40px;
   }
 
   a.homeLink {
     font-family: "Parisienne", cursive;
-    font-size: 30px;
+    font-size: 28px;
     color: $color_gold;
     text-decoration: none;
+  }
 
-    @include media-breakpoint-down(xl) {
-      font-size: 26px;
+  @include media-breakpoint-down(md) {
+    .closeMenu {
+      display: block;
+      position: absolute;
+      top: 24px;
+      left: 16px;
+    }
+
+    &.mobileMenuOpen {
+      .itemsWrapper {
+        transform: translateY(0);
+      }
+    }
+
+    .itemsWrapper {
+      position: absolute;
+      inset: 0;
+      background: white;
+      z-index: 1000;
+      flex-direction: column;
+      padding-top: 78px;
+
+      transform: translateY(-100%);
+      transform-origin: top;
     }
   }
 
@@ -27,47 +88,23 @@
     gap: 20px;
     align-items: center;
     margin: 0;
-    padding: 0;
-
-    @include media-breakpoint-down(xl) {
-      gap: 15px;
-    }
-
-    @include media-breakpoint-down(lg) {
-      gap: 15px;
-    }
-
-    @include media-breakpoint-down(md) {
-      li {
-        flex-basis: 100%;
-        display: flex;
-        justify-content: center;
-      }
-    }
+    transition: transform 400ms ease-in-out;
+    padding: 0 10px;
   }
 
   li {
     list-style: none;
 
     a {
+      text-align: center;
       text-decoration: none;
       color: #918585;
       text-transform: uppercase;
       cursor: pointer;
-      font-size: 18px;
+      font-size: 16px;
 
-      @include media-breakpoint-down(xl) {
-        font-size: 16px;
-      }
-
-      @include media-breakpoint-down(lg) {
-        font-size: 14px;
-      }
-
-      @include media-breakpoint-down(md) {
-        font-size: 12px;
-        text-align: center;
-      }
+      display: flex;
+      justify-content: center;
     }
   }
 }
