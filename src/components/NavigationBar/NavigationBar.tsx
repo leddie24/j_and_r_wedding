@@ -16,6 +16,10 @@ export const NavigationBar = () => {
     rootClass.push(styles.mobileMenuOpen);
   }
 
+  const onNavClick = () => {
+    toggleMobileMenu();
+  };
+
   let resizeTimer: NodeJS.Timeout;
   window.addEventListener("resize", () => {
     document.body.classList.add("resize-animation-stopper");
@@ -42,28 +46,44 @@ export const NavigationBar = () => {
           </button>
         )}
         <li className={styles.mobileOnly}>
-          <Link to={"/home"}>Home</Link>
+          <Link to={"/home"} onClick={onNavClick}>
+            Home
+          </Link>
         </li>
         <li>
-          <Link to={"/our-story"}>Our story</Link>
+          <Link to={"/our-story"} onClick={onNavClick}>
+            Our story
+          </Link>
         </li>
         <li>
-          <Link to={"/wedding-party"}>Wedding party</Link>
+          <Link to={"/wedding-party"} onClick={onNavClick}>
+            Wedding party
+          </Link>
         </li>
         <li>
-          <Link to={"/the-big-day"}>The big day</Link>
+          <Link to={"/the-big-day"} onClick={onNavClick}>
+            The big day
+          </Link>
         </li>
         <li>
-          <Link to={"/travel"}>Travel & stay</Link>
+          <Link to={"/travel"} onClick={onNavClick}>
+            Travel & stay
+          </Link>
         </li>
         <li>
-          <Link to={"/gallery"}>Gallery</Link>
+          <Link to={"/gallery"} onClick={onNavClick}>
+            Gallery
+          </Link>
         </li>
         <li>
-          <Link to={"/registry"}>Registry</Link>
+          <Link to={"/registry"} onClick={onNavClick}>
+            Registry
+          </Link>
         </li>
         <li>
-          <Link to={"/faq"}>FAQs</Link>
+          <Link to={"/faq"} onClick={onNavClick}>
+            FAQs
+          </Link>
         </li>
       </ul>
     </nav>
