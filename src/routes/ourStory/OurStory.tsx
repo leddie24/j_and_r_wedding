@@ -74,7 +74,7 @@ export default function OurStory() {
       <div className={styles.section}>
         <img src={img_2023_1} alt="" />
         <div className={styles.container_text}>
-          <h3>2013</h3>
+          <h3>2023</h3>
           <div>
             The proposal: Rebecca and Jeff planned a trip to Maine and Boston in June to celebrate
             Gabe and Christina's wedding and enjoy some traveling.
@@ -85,31 +85,30 @@ export default function OurStory() {
             heartfelt conversations about their future, goals, and what they love about each other
             and their families.
           </div>
-
           <div>
             When Rebecca stepped into the bathroom after dinner, a song in the background caught her
             attention. It was playing Margaritaville by Jimmy Buffet, which reminded her of the
-            place where she met Jeff for the first time. What were the odds? After leaving the
-            restaurant, they decided to take a walk along the pier before heading back to their
-            hotel. They stopped in front of the Boston Tea Party site, and that was when Jeff
-            proposed. Of course, REBECCA SAID YES! 💍
+            place where she met Jeff for the first time. What were the odds?
+          </div>
+          <div>
+            After leaving the restaurant, they decided to take a walk along the pier before heading
+            back to their hotel. They stopped in front of the Boston Tea Party site, and that was
+            when Jeff proposed. Of course, REBECCA SAID YES! 💍
           </div>
         </div>
       </div>
       <div className={styles.section}>
         <img src={img_2023_2} alt="" />
         <div className={styles.container_text}>
-          <h3>2013</h3>
           <div>
-            We first met on June 15th, 2013 at a birthday party at Margaritaville in Capitola.
-            Shortly after, we became facebook friends and met twice more in group outings. Jeff
-            recalls me complimenting him on how funny he is (which I don't remember that
-            conversation 😝).
+            We chose to celebrate our wedding on August 17th, 2024 which falls on the exact date of
+            our 5 year anniversary.
           </div>
           <div>
-            📸 Fun fact: There was a photographer at the birthday party who captured a photo of me
-            with Jeff in the background on the day we met.
+            We cannot wait to celebrate with all of you and can’t thank you enough for all the love
+            and support you've given us.
           </div>
+          <div>Now let the party begin! 💃🏻🕺🏻</div>
         </div>
       </div>
     </>

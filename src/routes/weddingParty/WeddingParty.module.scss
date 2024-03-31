@@ -1,0 +1,50 @@
+@import "../../theme/common";
+
+.container {
+  padding: 0;
+}
+
+.header {
+  margin: 0 auto 40px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.partyGrid {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 40px 0;
+
+  &::after {
+    content: "";
+    display: flex;
+  }
+}
+
+.memberCell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  color: $color_brown;
+
+  @include media-breakpoint-down(md) {
+    width: 50%;
+  }
+}
+
+.name {
+  font-size: 19px;
+  font-family: "Parisienne", cursive;
+  white-space: nowrap;
+}
+
+.role {
+  font-family: "Source Serif 4", serif;
+}
