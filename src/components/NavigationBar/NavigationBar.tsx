@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import styles from "./NavigationBar.module.scss";
 import React from "react";
 
@@ -15,6 +15,8 @@ export const NavigationBar = () => {
   if (isMenuOpen) {
     rootClass.push(styles.mobileMenuOpen);
   }
+
+  console.log("id", useLocation());
 
   const onNavClick = () => {
     toggleMobileMenu();
@@ -39,51 +41,71 @@ export const NavigationBar = () => {
         <span />
         <span />
       </div>
+      {isMenuOpen && (
+        <button className={styles.closeMenu} onClick={toggleMobileMenu}>
+          <img src={xIcon} alt="close" />
+        </button>
+      )}
       <ul className={styles.itemsWrapper}>
-        {isMenuOpen && (
-          <button className={styles.closeMenu} onClick={toggleMobileMenu}>
-            <img src={xIcon} alt="close" />
-          </button>
-        )}
         <li className={styles.mobileOnly}>
-          <Link to={"/home"} onClick={onNavClick}>
+          <NavLink
+            to={"/home"}
+            onClick={onNavClick}
+            className={({ isActive }) => [isActive ? styles.isActive : ""].join(" ")}
+          >
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to={"/our-story"} onClick={onNavClick}>
+          <NavLink
+            to={"/our-story"}
+            onClick={onNavClick}
+            className={({ isActive }) => [isActive ? styles.isActive : ""].join(" ")}
+          >
             Our story
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to={"/wedding-party"} onClick={onNavClick}>
+          <NavLink
+            to={"/wedding-party"}
+            onClick={onNavClick}
+            className={({ isActive }) => [isActive ? styles.isActive : ""].join(" ")}
+          >
             Wedding party
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to={"/the-big-day"} onClick={onNavClick}>
+          <NavLink
+            to={"/the-big-day"}
+            onClick={onNavClick}
+            className={({ isActive }) => [isActive ? styles.isActive : ""].join(" ")}
+          >
             The big day
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to={"/travel"} onClick={onNavClick}>
+          <NavLink
+            to={"/travel"}
+            onClick={onNavClick}
+            className={({ isActive }) => [isActive ? styles.isActive : ""].join(" ")}
+          >
             Travel & stay
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to={"/gallery"} onClick={onNavClick}>
+          <NavLink to={"/gallery"} onClick={onNavClick}>
             Gallery
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to={"/registry"} onClick={onNavClick}>
+          <NavLink to={"/registry"} onClick={onNavClick}>
             Registry
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to={"/faq"} onClick={onNavClick}>
+          <NavLink to={"/faq"} onClick={onNavClick}>
             FAQs
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>

@@ -46,6 +46,7 @@
     width: 30px;
     height: 30px;
     cursor: pointer;
+    z-index: 1001;
   }
 
   @include media-breakpoint-down(lg) {
@@ -118,6 +119,10 @@
 
       display: flex;
       justify-content: center;
+
+      &.isActive {
+        border-bottom: 1.5px solid #eba3ca;
+      }
     }
   }
 }
