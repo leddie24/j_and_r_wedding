@@ -51,7 +51,7 @@ export const NavigationBar = () => {
           <NavLink
             to={"/home"}
             onClick={onNavClick}
-            className={({ isActive }) => [isActive ? styles.isActive : ""].join(" ")}
+            className={({ isActive }) => (isActive ? styles.isActive : "")}
           >
             Home
           </NavLink>
@@ -60,7 +60,7 @@ export const NavigationBar = () => {
           <NavLink
             to={"/our-story"}
             onClick={onNavClick}
-            className={({ isActive }) => [isActive ? styles.isActive : ""].join(" ")}
+            className={({ isActive }) => (isActive ? styles.isActive : "")}
           >
             Our story
           </NavLink>
@@ -69,7 +69,7 @@ export const NavigationBar = () => {
           <NavLink
             to={"/wedding-party"}
             onClick={onNavClick}
-            className={({ isActive }) => [isActive ? styles.isActive : ""].join(" ")}
+            className={({ isActive }) => (isActive ? styles.isActive : "")}
           >
             Wedding party
           </NavLink>
@@ -78,7 +78,7 @@ export const NavigationBar = () => {
           <NavLink
             to={"/the-big-day"}
             onClick={onNavClick}
-            className={({ isActive }) => [isActive ? styles.isActive : ""].join(" ")}
+            className={({ isActive }) => (isActive ? styles.isActive : "")}
           >
             The big day
           </NavLink>
@@ -87,23 +87,35 @@ export const NavigationBar = () => {
           <NavLink
             to={"/travel"}
             onClick={onNavClick}
-            className={({ isActive }) => [isActive ? styles.isActive : ""].join(" ")}
+            className={({ isActive }) => (isActive ? styles.isActive : "")}
           >
             Travel & stay
           </NavLink>
         </li>
         <li>
-          <NavLink to={"/gallery"} onClick={onNavClick}>
+          <NavLink
+            to={"/gallery"}
+            onClick={onNavClick}
+            className={({ isActive }) => (isActive ? styles.isActive : "")}
+          >
             Gallery
           </NavLink>
         </li>
         <li>
-          <NavLink to={"/registry"} onClick={onNavClick}>
+          <NavLink
+            to={"/registry"}
+            onClick={onNavClick}
+            className={({ isActive }) => (isActive ? styles.isActive : "")}
+          >
             Registry
           </NavLink>
         </li>
         <li>
-          <NavLink to={"/faq"} onClick={onNavClick}>
+          <NavLink
+            to={"/faq"}
+            onClick={onNavClick}
+            className={({ isActive }) => (isActive ? styles.isActive : "")}
+          >
             FAQs
           </NavLink>
         </li>
