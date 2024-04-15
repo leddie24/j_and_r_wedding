@@ -39,8 +39,10 @@ export default function FAQ() {
         <h3>How can guests RSVP?</h3>
         <div>
           Please fill out your RSVP and send to us by mail (prepaid stamp and envelope are included
-          with your invitation). For any issues with the RSVP process, please email us at
-          cholinhares@gmail.com
+          with your invitation). For any issues with the RSVP process, please email us at{" "}
+          <a className={styles.link} href="mailto:cholinhares@gmail.com">
+            cholinhares@gmail.com
+          </a>
         </div>
       </section>
       <section className={styles.faqSection}>
@@ -62,6 +64,12 @@ export default function FAQ() {
           information, please take a look at <span className={styles.underline}>The Big Day</span>{" "}
           page.
         </div>
+      </section>
+      <section className={`${styles.faqSection} ${styles.centered}`}>
+        For any additional questions, please email us at{" "}
+        <a className={styles.link} href="mailto:cholinhares@gmail.com">
+          cholinhares@gmail.com
+        </a>
       </section>
     </>
   );

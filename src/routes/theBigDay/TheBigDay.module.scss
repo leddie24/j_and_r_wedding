@@ -1,0 +1,32 @@
+.venueImage {
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.headerImage {
+  margin: 50px auto;
+  display: block;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  font-size: 26px;
+  font-style: italic;
+
+  > section {
+    flex: 1 1 50%;
+    text-align: center;
+
+    > div {
+      &:first-of-type {
+        margin-bottom: 10px;
+      }
+    }
+
+    &:first-of-type {
+      border-right: 1px solid #000;
+    }
+  }
+}

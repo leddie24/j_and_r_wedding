@@ -284,7 +284,7 @@ export default function WeddingParty() {
       <div className={styles.memberCell}>
         {<img src={member.picture} alt={member.name} />}
         <div className={styles.name}>{member.name}</div>
-        <div className={styles.role}>{member.role}</div>
+        <div>{member.role}</div>
       </div>
     );
   };

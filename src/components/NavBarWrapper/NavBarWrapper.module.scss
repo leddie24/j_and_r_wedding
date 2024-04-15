@@ -11,6 +11,7 @@
 }
 
 .container {
+  font-family: "Source Serif 4", serif;
   max-width: 1200px;
 
   @include media-breakpoint-up(xl) {

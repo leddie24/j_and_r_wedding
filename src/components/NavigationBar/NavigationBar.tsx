@@ -1,4 +1,4 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./NavigationBar.module.scss";
 import React from "react";
 
@@ -15,8 +15,6 @@ export const NavigationBar = () => {
   if (isMenuOpen) {
     rootClass.push(styles.mobileMenuOpen);
   }
-
-  console.log("id", useLocation());
 
   const onNavClick = () => {
     toggleMobileMenu();
