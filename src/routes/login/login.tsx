@@ -21,7 +21,7 @@ export default function Login() {
 
   const onSubmitClick = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === "wendys") {
+    if (password === "Jeffecca2024") {
       localStorage.setItem("randj_valid", "true");
       navigate("/home");
     } else {
