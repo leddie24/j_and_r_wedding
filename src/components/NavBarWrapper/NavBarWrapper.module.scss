@@ -13,7 +13,9 @@
 .container {
   font-family: "Source Serif 4", serif;
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
 
   @include media-breakpoint-up(xl) {
     padding: 0 43px;

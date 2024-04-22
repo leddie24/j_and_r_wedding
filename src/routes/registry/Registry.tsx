@@ -7,7 +7,7 @@ export default function Registry() {
   return (
     <section className={styles.registryContainer}>
       <img src={header} alt="A note on gifts" />
-      <div>
+      <div className={styles.registryText}>
         Your love, laughter, and presence on our special day is the greatest gift of all. If you'd
         like to further honor us, your contribution to our honeymoon fund would be deeply
         appreciated.

@@ -2,9 +2,12 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 680px;
   margin: 20px auto;
   gap: 50px;
+}
+
+.registryText {
+  max-width: 680px;
 }
 
 .options {
