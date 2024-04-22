@@ -1,3 +1,5 @@
+@import "../../theme/common";
+
 .venueImage {
   width: 100%;
   padding: 0 20px;
@@ -19,6 +21,10 @@
     flex: 1 1 50%;
     text-align: center;
 
+    @include media-breakpoint-down(lg) {
+      font-size: 2.5vw;
+    }
+
     > div {
       &:first-of-type {
         margin-bottom: 10px;
@@ -29,4 +35,28 @@
       border-right: 1px solid #000;
     }
   }
+}
+
+.notes {
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      margin-bottom: 10px;
+      list-style-type: none;
+      list-style-position: outside;
+      padding-left: 30px;
+      position: relative;
+
+      svg {
+        position: absolute;
+        top: 5px;
+        left: 0;
+      }
+    }
+  }
+}
+
+.spaceBelow {
+  margin-bottom: 10px;
 }
