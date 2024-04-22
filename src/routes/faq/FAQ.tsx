@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./FAQ.module.scss";
 
 export default function FAQ() {
@@ -61,7 +62,10 @@ export default function FAQ() {
         <h3>Will transportation be provided to and from the venue?</h3>
         <div>
           We will have a shuttle that will take guests to and from the venue. For schedule
-          information, please take a look at <span className={styles.underline}>The Big Day</span>{" "}
+          information, please take a look at{" "}
+          <Link to="/the-big-day" className={styles.underline}>
+            The Big Day
+          </Link>{" "}
           page.
         </div>
       </section>
