@@ -1,3 +1,5 @@
+@import "../../theme/common";
+
 .mainAccomodations {
   margin-top: 40px;
   .accomodationContainer {
@@ -16,8 +18,13 @@
 
     .note {
       margin-top: 8px;
+      margin-bottom: 20px;
     }
   }
+}
+
+.roomTypes {
+  margin-bottom: 10px;
 }
 
 .nearbyAirports {
@@ -58,6 +65,27 @@ h2 {
   font-style: italic;
   flex: 0 0 30%;
   text-align: center;
+  align-items: center;
+}
+
+.website {
+  display: flex;
+  padding: 0 35px;
+  height: 40px;
+  border: 1px solid #f2b1bf;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  align-items: center;
+  text-decoration: none;
+  font-style: normal;
+  color: #736666;
+  margin-top: auto;
+
+  &:hover {
+    background-color: #f2b1bf;
+    color: #fff;
+  }
 }
 
 .accomodationImageContainer {
@@ -83,7 +111,6 @@ h2 {
   }
 
   .imageSketch {
-    // position: absolute;
     opacity: 1;
     transition: opacity 200ms ease-out;
     max-width: 100%;
@@ -101,6 +128,13 @@ h2 {
 
 .toDo {
   flex: 0 1 33%;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  @include media-breakpoint-down(md) {
+    flex: 0 1 50%;
+  }
+
   h3 {
     font-style: italic;
     text-align: center;
@@ -108,6 +142,7 @@ h2 {
     margin-top: 0;
   }
   ul {
+    padding: 0;
     list-style-type: none;
     list-style-position: outside;
 

@@ -29,6 +29,7 @@ interface IAccomodation {
   address: string;
   eta: number;
   roomTypes: string;
+  website: string;
   note?: string;
 }
 
@@ -52,6 +53,8 @@ export default function WeddingParty() {
       eta: 5,
       roomTypes: "Studio suite & 2 bedroom suites",
       note: "*Click on the hotel block button below for discounted rates. If any issues with booking, please email me with your name, room type, and booking date at cholinhares@gmail.com",
+      website:
+        "https://www.marriott.com/event-reservations/reservation-link.mi?id=1699293211769&key=GRP&app=resvlink",
     },
     {
       image: marriott,
@@ -61,6 +64,7 @@ export default function WeddingParty() {
       eta: 7,
       roomTypes: "King guest room & 2 doubles guest room",
       note: "*We do not have hotel block at this hotel",
+      website: "https://www.marriott.com/en-us/hotels/oaksr-san-ramon-marriott/overview/",
     },
   ];
 
@@ -72,6 +76,8 @@ export default function WeddingParty() {
       address: "18090 San Ramon Valley Blvd. San Ramon, CA 94583",
       eta: 8,
       roomTypes: "Guest rooms & One bedroom suites",
+      website:
+        "https://www.sonesta.com/sonesta-select/ca/san-ramon/sonesta-select-san-ramon?=&c3api=3976,621507257925,sonesta%20select%20san%20ramon,e&gad_source=1",
     },
     {
       image: hyatt,
@@ -80,6 +86,7 @@ export default function WeddingParty() {
       address: "2323 San Ramon Valley Blvd. San Ramon, CA 94583",
       eta: 9,
       roomTypes: "Studio king & One bedroom suites",
+      website: "https://www.hyatt.com/en-US/hotel/california/hyatt-house-san-ramon/oakxs",
     },
     {
       image: extended_stay,
@@ -88,6 +95,7 @@ export default function WeddingParty() {
       address: "18000 San Ramon Valley Blvd. San Ramon, CA 94583",
       eta: 8,
       roomTypes: "Studio & Deluxe suites",
+      website: "https://www.extendedstayamerica.com/hotels/ca/oakland/bishop-ranch-west",
     },
   ];
 
@@ -249,8 +257,11 @@ export default function WeddingParty() {
         <div className={styles.name}>{accomodation.name}</div>
         <div>{accomodation.address}</div>
         <div className={styles.eta}>{accomodation.eta} min drive to venue</div>
-        <div>Room types: {accomodation.roomTypes}</div>
+        <div className={styles.roomTypes}>Room types: {accomodation.roomTypes}</div>
         {accomodation.note && <div className={styles.note}>{accomodation.note}</div>}
+        <a href={accomodation.website} className={styles.website} target="_blank">
+          Website
+        </a>
       </div>
     );
   };
