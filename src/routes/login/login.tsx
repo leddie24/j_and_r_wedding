@@ -1,6 +1,5 @@
 import React, { useCallback } from "react";
 import styles from "./login.module.scss";
-import lock from "../../assets/login/lock.svg";
 import flowers_left from "../../assets/login/flowers_left.avif";
 import flowers_right from "../../assets/login/flowers_right.avif";
 import bridge from "../../assets/login/bridge.avif";
