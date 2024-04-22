@@ -48,7 +48,11 @@
 
   @include media-breakpoint-down(md) {
     flex: 1 1 auto;
-    transform: translateX(30px);
+    transform: translateX(15px);
+  }
+
+  @include media-breakpoint-down(sm) {
+    transform: translateX(10px);
   }
 
   .contentContainer {

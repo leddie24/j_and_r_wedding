@@ -245,7 +245,7 @@ export default function WeddingParty() {
 
   const renderAccomodation = (accomodation: IAccomodation) => {
     return (
-      <div className={styles.accomodation}>
+      <div className={styles.accomodation} key={accomodation.name}>
         <div className={styles.accomodationImageContainer}>
           <img className={styles.image} src={accomodation.image} alt={accomodation.name} />
           <img
@@ -293,15 +293,19 @@ export default function WeddingParty() {
         <div className={styles.toDoContainer}>
           {thingToDo.map((city) => {
             return (
-              <div className={styles.toDo}>
+              <div className={styles.toDo} key={city.name}>
                 <h3>{city.name}</h3>
                 <ul>
                   {city.things.map((thing) => {
                     return (
-                      <li>
+                      <li key={thing.name}>
                         <div>
-                          {thing.icon.map((icon) => {
-                            return icon;
+                          {thing.icon.map((icon, index) => {
+                            return (
+                              <div key={index} className={styles.iconContents}>
+                                {icon}
+                              </div>
+                            );
                           })}
                         </div>
                         <div>{thing.name}</div>

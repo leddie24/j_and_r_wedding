@@ -38,6 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: "Roboto", sans-serif;
 
   .closeMenu {
     display: none;
@@ -85,7 +86,7 @@
       background: white;
       z-index: 1000;
       flex-direction: column;
-      padding-top: 78px;
+      padding: 78px 0 0;
 
       transform: translateY(-100%);
       transform-origin: top;
@@ -98,6 +99,7 @@
     align-items: center;
     margin: 0;
     transition: transform 250ms ease-in-out;
+    padding: 0;
   }
 
   li {

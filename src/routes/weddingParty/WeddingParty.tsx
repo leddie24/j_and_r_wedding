@@ -281,7 +281,7 @@ export default function WeddingParty() {
 
   const renderMemberCell = (member: WeddingMember) => {
     return (
-      <div className={styles.memberCell}>
+      <div className={styles.memberCell} key={member.name}>
         {<img src={member.picture} alt={member.name} />}
         <div className={styles.name}>{member.name}</div>
         <div>{member.role}</div>

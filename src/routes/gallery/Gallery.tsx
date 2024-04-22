@@ -43,8 +43,8 @@ export default function Gallery() {
 
   return (
     <div className={styles.gallery}>
-      {images.map((image) => {
-        return <img src={image} alt="wedding picture" />;
+      {images.map((image, index) => {
+        return <img src={image} alt="wedding picture" key={index} />;
       })}
     </div>
   );

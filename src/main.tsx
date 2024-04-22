@@ -1,5 +1,3 @@
-/* eslint-disable react-refresh/only-export-components */
-
 import React from "react";
 import ReactDOM from "react-dom/client";
 
@@ -8,19 +6,17 @@ import "./index.scss";
 
 import { NavBarWrapper } from "./components/NavBarWrapper/NavBarWrapper";
 
-import loadable from "@loadable/component";
-
-const isAuthenticated = !!localStorage.getItem("randj_valid");
-
-const Home = loadable(() => import("./routes/home/Home"));
-const Login = loadable(() => import("./routes/login/login"));
-const OurStory = loadable(() => import("./routes/ourStory/OurStory"));
-const WeddingParty = loadable(() => import("./routes/weddingParty/WeddingParty"));
-const TheBigDay = loadable(() => import("./routes/theBigDay/TheBigDay"));
-const TravelAndStay = loadable(() => import("./routes/travelAndStay/TravelAndStay"));
-const Gallery = loadable(() => import("./routes/gallery/Gallery"));
-const Registry = loadable(() => import("./routes/registry/Registry"));
-const FAQ = loadable(() => import("./routes/faq/FAQ"));
+import {
+  FAQ,
+  Gallery,
+  Home,
+  Login,
+  OurStory,
+  Registry,
+  TheBigDay,
+  TravelAndStay,
+  WeddingParty,
+} from "./routes";
 
 const router = createHashRouter([
   {
@@ -28,7 +24,7 @@ const router = createHashRouter([
     element: <Login />,
   },
   {
-    element: isAuthenticated ? <NavBarWrapper /> : <Navigate to="/" />,
+    element: <NavBarWrapper />,
     children: [
       {
         path: "/home",
@@ -36,11 +32,7 @@ const router = createHashRouter([
       },
       {
         path: "/our-story",
-        element: (
-          <React.Suspense fallback={<div>loading</div>}>
-            <OurStory />
-          </React.Suspense>
-        ),
+        element: <OurStory />,
       },
       {
         path: "/wedding-party",

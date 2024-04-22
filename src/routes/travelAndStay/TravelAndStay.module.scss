@@ -1,16 +1,36 @@
 @import "../../theme/common";
 
+.nearbyAirports {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-width: 100%;
+  }
+}
+
 .mainAccomodations {
   margin-top: 40px;
+
   .accomodationContainer {
     display: flex;
     justify-content: center;
     gap: 60px;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
   }
 
   .accomodation {
     flex: 1 1 50%;
     max-width: 480px;
+
+    @include media-breakpoint-down(sm) {
+      flex: 1 1 100%;
+    }
 
     .name {
       font-size: 26px;
@@ -27,18 +47,15 @@
   margin-bottom: 10px;
 }
 
-.nearbyAirports {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 h2 {
   font-family: "Bellefair", serif;
   text-transform: uppercase;
   letter-spacing: 7px;
   text-align: center;
+}
+
+.iconContents {
+  display: contents;
 }
 
 .otherAccomodations {
@@ -48,6 +65,10 @@ h2 {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
   }
 }
 
@@ -90,6 +111,13 @@ h2 {
 
 .accomodationImageContainer {
   position: relative;
+  @include media-breakpoint-down(sm) {
+    align-self: stretch;
+
+    .image {
+      width: 100%;
+    }
+  }
 
   &:hover {
     .image {
@@ -115,6 +143,17 @@ h2 {
     transition: opacity 200ms ease-out;
     max-width: 100%;
   }
+
+  @include media-breakpoint-down(sm) {
+    .image {
+      opacity: 1;
+      position: relative;
+    }
+
+    .imageSketch {
+      display: none;
+    }
+  }
 }
 
 .eta {
@@ -124,6 +163,10 @@ h2 {
 .toDoContainer {
   display: flex;
   flex-wrap: wrap;
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
 }
 
 .toDo {
@@ -135,11 +178,19 @@ h2 {
     flex: 0 1 50%;
   }
 
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 30px;
+  }
+
   h3 {
     font-style: italic;
     text-align: center;
     font-size: 24px;
     margin-top: 0;
+
+    @include media-breakpoint-down(sm) {
+      text-align: start;
+    }
   }
   ul {
     padding: 0;
