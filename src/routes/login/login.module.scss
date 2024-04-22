@@ -69,8 +69,8 @@
 }
 
 .password_input_container {
-  max-width: 300px;
-  width: 100%;
+  // max-width: 300px;
+  // width: 100%;
   height: 80px;
   border: 2px solid transparent;
   border-radius: 8px;
@@ -82,6 +82,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  gap: 10px;
 
   @include media-breakpoint-down(sm) {
     height: 60px;
@@ -167,33 +169,42 @@
   }
 }
 
-.lock_image {
-  margin-left: 12px;
-  pointer-events: none;
-}
-
 .form {
-  display: flex;
+  display: contents;
+  // outline: 1px solid red;
+
+  > svg {
+    margin-left: 12px;
+    flex: 0 0 24px;
+  }
 }
 
 .password_input {
   font-size: 18px;
   outline: 0;
   border: 0;
-  margin-left: 12px;
   color: $color_lightBrown;
-  flex: 1 1 auto;
+  flex: 1 1 100%;
+  max-width: 200px;
 }
 
 .password_submit {
   font-size: 0;
-  border: 0 !important;
-  outline: 0 !important;
-  height: 24px;
-  width: 24px;
-  margin-right: 12px;
-  background: center center url("../../assets/login/right-arrow.svg") no-repeat;
+  border: 0;
+  outline: 0;
   cursor: pointer;
+  fill: #e5e5e5;
+  background-color: transparent;
+  margin-right: 6px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover {
+    fill: #a38181;
+  }
 
   &:focus-visible {
     outline: 0;

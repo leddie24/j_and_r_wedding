@@ -8,6 +8,8 @@ import san_jose from "../../assets/login/san_jose.svg";
 import x_circle from "../../assets/login/x-circle.svg";
 
 import { useNavigate } from "react-router-dom";
+import { SolarHeartLockBoldDuotone } from "./lock";
+import { EmojioneMonotoneRightArrow } from "./submit";
 
 export default function Login() {
   const [password, setPassword] = React.useState("");
@@ -50,8 +52,8 @@ export default function Login() {
             <div>Rebecca and Jeffrey</div>
           </div>
           <div className={styles.password_input_container}>
-            <img className={styles.lock_image} src={lock} alt="" />
             <form className={styles.form} onSubmit={onSubmitClick}>
+              <SolarHeartLockBoldDuotone />
               <input
                 onChange={updatePassword}
                 className={styles.password_input}
@@ -60,7 +62,10 @@ export default function Login() {
                 title="password"
                 value={password}
               />
-              <input type="submit" className={styles.password_submit} />
+              <button onClick={onSubmitClick} className={styles.password_submit} type="submit">
+                <EmojioneMonotoneRightArrow />
+                submit
+              </button>
             </form>
           </div>
 
