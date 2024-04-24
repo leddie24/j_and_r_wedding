@@ -1,6 +1,7 @@
 import styles from "./TheBigDay.module.scss";
 import venue from "./venue.jpg";
 import header from "./header.png";
+import bridges from "./bridges.png";
 import { MingcuteTimeLine } from "./assets/clock";
 import { PhSunBold } from "./assets/sun";
 import { MingcuteBus2Line } from "./assets/bus";
@@ -11,6 +12,7 @@ export default function OurStory() {
     <>
       <img src={venue} className={styles.venueImage} alt="The Bridges golf club" />
       <img src={header} className={styles.headerImage} alt="The Bridges golf club" />
+      <img src={bridges} className={styles.headerImage} alt="The Bridges golf club" />
       <section className={styles.information}>
         <section>
           <div>Ceremony &amp; Reception</div>

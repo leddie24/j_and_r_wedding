@@ -1,6 +1,7 @@
 import styles from "./WeddingParty.module.scss";
 import bridal_header from "./images/bridal_heading.png";
 import bridal_1 from "./images/bridal_1.png";
+import bridal_1_test from "./images/bridal_1_test.png";
 import bridal_2 from "./images/bridal_2.png";
 import bridal_3 from "./images/bridal_3.png";
 import bridal_4 from "./images/bridal_4.png";
@@ -292,7 +293,7 @@ export default function WeddingParty() {
   return (
     <div className={styles.container}>
       <div className={styles.section}>
-        <img className={styles.header} src={bridal_header} alt="The Bridal party" />
+        <img className={styles.header} src={bridal_header} alt="The Bridal party" width={344} />
         <div className={styles.partyGrid}>
           {bridalParty.map((member) => {
             return renderMemberCell(member);
@@ -300,7 +301,12 @@ export default function WeddingParty() {
         </div>
       </div>
       <div className={styles.section}>
-        <img className={styles.header} src={groomsmen_header} alt="The Groomsmen party" />
+        <img
+          className={styles.header}
+          src={groomsmen_header}
+          alt="The Groomsmen party"
+          width={413}
+        />
         <div className={styles.partyGrid}>
           {groomsmenParty.map((member) => {
             return renderMemberCell(member);
@@ -308,7 +314,7 @@ export default function WeddingParty() {
         </div>
       </div>
       <div className={styles.section}>
-        <img className={styles.header} src={kids_header} alt="The Kids club" />
+        <img className={styles.header} src={kids_header} alt="The Kids club" width={273} />
         <div className={styles.partyGrid}>
           {kidsClub.map((member) => {
             return renderMemberCell(member);
