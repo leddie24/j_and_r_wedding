@@ -1,7 +1,6 @@
 import styles from "./WeddingParty.module.scss";
 import bridal_header from "./images/bridal_heading.png";
 import bridal_1 from "./images/bridal_1.png";
-import bridal_1_test from "./images/bridal_1_test.png";
 import bridal_2 from "./images/bridal_2.png";
 import bridal_3 from "./images/bridal_3.png";
 import bridal_4 from "./images/bridal_4.png";
