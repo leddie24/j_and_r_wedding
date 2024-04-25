@@ -4,6 +4,10 @@
   flex-direction: column;
   margin: 20px auto;
   gap: 50px;
+
+  > img {
+    max-width: 352px;
+  }
 }
 
 .registryText {

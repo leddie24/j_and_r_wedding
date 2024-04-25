@@ -292,7 +292,11 @@ export default function WeddingParty() {
   return (
     <div className={styles.container}>
       <div className={styles.section}>
-        <img className={styles.header} src={bridal_header} alt="The Bridal party" width={344} />
+        <img
+          className={`${styles.header} ${styles.bridal_header}`}
+          src={bridal_header}
+          alt="The Bridal party"
+        />
         <div className={styles.partyGrid}>
           {bridalParty.map((member) => {
             return renderMemberCell(member);
@@ -301,10 +305,9 @@ export default function WeddingParty() {
       </div>
       <div className={styles.section}>
         <img
-          className={styles.header}
+          className={`${styles.header} ${styles.groomsmen_header}`}
           src={groomsmen_header}
           alt="The Groomsmen party"
-          width={413}
         />
         <div className={styles.partyGrid}>
           {groomsmenParty.map((member) => {
@@ -313,7 +316,11 @@ export default function WeddingParty() {
         </div>
       </div>
       <div className={styles.section}>
-        <img className={styles.header} src={kids_header} alt="The Kids club" width={273} />
+        <img
+          className={`${styles.header} ${styles.kids_header}`}
+          src={kids_header}
+          alt="The Kids club"
+        />
         <div className={styles.partyGrid}>
           {kidsClub.map((member) => {
             return renderMemberCell(member);
