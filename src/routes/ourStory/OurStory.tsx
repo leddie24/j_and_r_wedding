@@ -23,14 +23,14 @@ export default function OurStory() {
         <div className={styles.container_text}>
           <h3>2013</h3>
           <div>
-            We first met on June 15th, 2013 at a birthday party at Margaritaville in Capitola.
-            Shortly after, we became facebook friends and met twice more in group outings. Jeff
-            recalls me complimenting him on how funny he is (which I don't remember that
-            conversation 😝).
+            Rebecca and Jeff first met on June 15th, 2013 at a birthday party at Margaritaville in
+            Capitola. Shortly after, they became facebook friends and met twice more in group
+            outings. Jeff recalls Rebecca complimenting him on how funny he is (however, Rebecca
+            doesn't remember that conversation 😝).
           </div>
           <div>
-            📸 Fun fact: There was a photographer at the birthday party who captured a photo of me
-            with Jeff in the background on the day we met.
+            📸 Fun fact: There was a photographer at the birthday party who captured a photo of
+            Rebecca with Jeff in the background on the day they met.
           </div>
         </div>
       </div>
@@ -38,18 +38,18 @@ export default function OurStory() {
         <div className={styles.container_text}>
           <h3>2019</h3>
           <div>
-            6 years later, we connected again when Jeff sent me a message via facebook in response
-            one of my stories. I captured his interest with my guitar skills⚡️ 🎸. At the time, I
-            was living in NYC and Jeff was in San Francisco. I had the opportunity to visit home for
-            a week, so we decided to meet up at a local bar to catch up. Afterwards, Jeff asked me
-            on a date where we had dinner at Bella Trattoria in San Francisco, then to an Irish Bar
-            for Karaoke and Whiskey. The night extended into the wee hours the next morning, which
-            happened to be on Valentine's Day! 💌
+            6 years later, they reconnected when Jeff messaged Rebecca via Facebook in response to
+            one of her stories. Rebecca captured his interest with her guitar skills⚡️ 🎸. At the
+            time, Rebecca was living in NYC and Jeff in San Francisco. Rebecca had the opportunity
+            to visit home for a week, so they decided to meet up at a local bar to catch up.
+            Afterwards, Jeff asked Rebecca on a date to Bella Trattoria in San Francisco, then to an
+            Irish Bar for karaoke and whiskey. The night extended into the wee hours the next
+            morning, which happened to be on Valentine's Day! 💌
           </div>
           <div>
-            Since that date, we ended up talking every day and night. We met again a few months
-            later in Vegas, where we had yet another amazing weekend. We became official on August
-            17, 2019! 🫶🏼
+            Since that date, they ended up talking every day and night. They met again a few months
+            later in Vegas, where they had yet another amazing weekend. They became official on
+            August 17, 2019! 🫶🏼
           </div>
         </div>
         <figure>
@@ -105,7 +105,7 @@ export default function OurStory() {
             our 5 year anniversary.
           </div>
           <div>
-            We cannot wait to celebrate with all of you and can’t thank you enough for all the love
+            We cannot wait to celebrate with all of you and can't thank you enough for all the love
             and support you've given us.
           </div>
           <div>Now let the party begin! 💃🏻🕺🏻</div>

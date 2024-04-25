@@ -20,6 +20,10 @@ export default function Login() {
     setPassword(e.currentTarget.value);
   }, []);
 
+  if (localStorage.getItem("randj_valid") === "true") {
+    navigate("/home");
+  }
+
   const onSubmitClick = (e: React.FormEvent) => {
     e.preventDefault();
     if (password === "Jeffecca2024") {
