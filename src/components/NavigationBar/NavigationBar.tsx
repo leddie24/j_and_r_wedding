@@ -87,7 +87,7 @@ export const NavigationBar = () => {
             onClick={onNavClick}
             className={({ isActive }) => (isActive ? styles.isActive : "")}
           >
-            Travel & stay
+            Travel &amp; stay
           </NavLink>
         </li>
         <li>

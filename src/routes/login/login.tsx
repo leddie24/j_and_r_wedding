@@ -21,7 +21,9 @@ export default function Login() {
   }, []);
 
   if (localStorage.getItem("randj_valid") === "true") {
-    navigate("/home");
+    navigate("/home", {
+      replace: true,
+    });
   }
 
   const onSubmitClick = (e: React.FormEvent) => {
