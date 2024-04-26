@@ -6,7 +6,7 @@ import bridge from "../../assets/login/bridge.avif";
 import san_jose from "../../assets/login/san_jose.svg";
 import x_circle from "../../assets/login/x-circle.svg";
 
-import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import { SolarHeartLockBoldDuotone } from "./lock";
 import { EmojioneMonotoneRightArrow } from "./submit";
 
@@ -14,23 +14,19 @@ export default function Login() {
   const [password, setPassword] = React.useState("");
   const [isError, setError] = React.useState(false);
 
-  const navigate = useNavigate();
-
   const updatePassword = useCallback((e: React.FormEvent<HTMLInputElement>) => {
     setPassword(e.currentTarget.value);
   }, []);
 
   if (localStorage.getItem("randj_valid") === "true") {
-    navigate("/home", {
-      replace: true,
-    });
+    return <Navigate to="/home" replace />;
   }
 
   const onSubmitClick = (e: React.FormEvent) => {
     e.preventDefault();
     if (password === "Jeffecca2024") {
       localStorage.setItem("randj_valid", "true");
-      navigate("/home");
+      return <Navigate to="/home" replace />;
     } else {
       setError(true);
     }
