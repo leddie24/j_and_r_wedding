@@ -37,7 +37,7 @@ export default function Home() {
           <div>9000 S. Gale Bridge Rd.</div>
           <div>San Ramon, CA 94582</div>
         </div>
-        <div className={styles.footNote}>Attire: Formal</div>
+        <div className={styles.footNote}>Attire: Semi-formal</div>
         <div className={styles.footNote}>
           <div>Outdoor Ceremony</div>
           <div>Indoor Reception</div>
