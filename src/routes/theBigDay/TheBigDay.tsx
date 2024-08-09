@@ -56,15 +56,23 @@ export default function OurStory() {
               Pick up times from venue to The Residence Inn by Marriott:
             </div>
             <div className={styles.spaceBelow}>
-              8:30pm
+              8:00
               <br />
-              9:00pm
+              8:20
               <br />
-              9:30pm
+              8:40
               <br />
-              10:00pm (last shuttle for guests)
+              9:00
               <br />
-              10:30pm (wedding party only)
+              9:20
+              <br />
+              9:40
+              <br />
+              10:00
+              <br />
+              10:30 (last shuttle for guests)
+              <br />
+              10:45 (wedding party only)
             </div>
           </li>
           <li>
